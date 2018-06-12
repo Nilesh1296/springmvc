@@ -1,0 +1,53 @@
+body{
+	margin :0;
+	padding:0;
+	background-color:green;
+	font-family:sans-serif;
+	background-position: center;
+
+}
+div
+{
+	padding : 5px;
+	
+	
+}
+.loginbox{
+	height:600px;
+	width:500px;
+	top:50%;
+	left:50%;
+	position:absolute;
+	background-color:blue;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding : 50px;
+}
+
+.abc
+{
+	width :420px;
+	height:420px;
+	
+}
+input{
+	padding :5px;
+	
+}
+
+button
+{
+	width:15em;
+	height:2em;
+}
+
+.login
+{
+	width:15em;
+	height:2em;
+}
+.login:hover
+{
+	background-color:green;
+	color:white;
+}
