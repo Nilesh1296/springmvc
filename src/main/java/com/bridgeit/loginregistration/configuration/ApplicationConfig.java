@@ -1,4 +1,4 @@
-package com.bridgeit.configuration;
+package com.bridgeit.loginregistration.configuration;
 
 import javax.sql.DataSource;
 
@@ -10,22 +10,21 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.transaction.interceptor.TransactionInterceptor;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import com.bridgeit.interceptor.LoginInterceptor;
-import com.bridgeit.loginRegistration.dao.UserDaoImpl;
+import com.bridgeit.loginregistration.dao.UserDaoImpl;
+import com.bridgeit.loginregistration.interceptor.LoginInterceptor;
 
 @Configuration
-@ComponentScan(basePackages = "com.bridgeit")
+@ComponentScan(basePackages = "com.bridgeit.loginregistration")
 @PropertySource(value = { "classpath:application.properties" })
 @EnableWebMvc
-public class ApplicationConfig extends WebMvcConfigurerAdapter {
+public class ApplicationConfig implements WebMvcConfigurer {
 	@Autowired
 	private Environment env;
 

@@ -1,4 +1,4 @@
-package com.bridgeit.interceptor;
+package com.bridgeit.loginregistration.interceptor;
 
 import java.util.regex.Pattern;
 

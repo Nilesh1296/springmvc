@@ -1,4 +1,4 @@
-package com.bridgeit.loginRegistration.controller;
+package com.bridgeit.loginregistration.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.bridgeit.loginRegistration.dao.UserDaoImpl;
-import com.bridgeit.loginRegistration.model.User;
+import com.bridgeit.loginregistration.dao.UserDaoImpl;
+import com.bridgeit.loginregistration.model.User;
+
 
 @Controller
 public class RegistrationController
@@ -26,14 +27,23 @@ public class RegistrationController
 	   return mav;
 	   
    }
-	
-	/*@RequestMapping(value = "/")
+
+	@RequestMapping(value = "/")
 	   public ModelAndView home()
 	   {	 
 			 
 		   return new ModelAndView("index");
 		   
-	   }*/
+	   }
+	
+	
+	@RequestMapping(value = "/logout")
+	   public ModelAndView logout()
+	   {	 
+			 
+		   return new ModelAndView("index");
+		   
+	   }
 	
 	
 }

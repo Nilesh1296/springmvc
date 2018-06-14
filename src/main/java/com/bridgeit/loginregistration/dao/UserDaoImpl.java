@@ -1,4 +1,4 @@
-package com.bridgeit.loginRegistration.dao;
+package com.bridgeit.loginregistration.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.bridgeit.loginRegistration.model.Login;
-import com.bridgeit.loginRegistration.model.User;
+import com.bridgeit.loginregistration.model.Login;
+import com.bridgeit.loginregistration.model.User;
+
+
 
 public class UserDaoImpl implements Userdao {
 

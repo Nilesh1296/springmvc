@@ -9,5 +9,9 @@
 <body>
 <p>${message}</p>
 <h1>Successfully login</h1>
+<form  action="logout">
+<input type="submit" value="LOGOUT">
+</form>
+
 </body>
 </html>

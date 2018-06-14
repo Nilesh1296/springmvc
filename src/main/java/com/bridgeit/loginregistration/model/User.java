@@ -1,4 +1,4 @@
-package com.bridgeit.loginRegistration.model;
+package com.bridgeit.loginregistration.model;
 
 public class User {
 	private String username;

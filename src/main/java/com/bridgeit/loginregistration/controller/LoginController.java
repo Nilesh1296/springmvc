@@ -1,4 +1,4 @@
-package com.bridgeit.loginRegistration.controller;
+package com.bridgeit.loginregistration.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.bridgeit.loginRegistration.dao.UserDaoImpl;
-import com.bridgeit.loginRegistration.model.Login;
-import com.bridgeit.loginRegistration.model.User;
-
+import com.bridgeit.loginregistration.dao.UserDaoImpl;
+import com.bridgeit.loginregistration.model.Login;
+import com.bridgeit.loginregistration.model.User;
 @Controller
-public class LoginController 
+public class LoginController
 {
 	@Autowired
 	UserDaoImpl userdaoimpl;
@@ -50,5 +49,6 @@ public class LoginController
 		    return mav;
 			
 		}
+	
 	
 }
